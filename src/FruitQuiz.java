@@ -14,6 +14,17 @@ public class FruitQuiz extends KeyAdapter {
 
 	void makeQuestions() {
 		question1 = new JLabel("<html>Which is not a real fruit? <br> A: Dragon Fruit <br> B: Durian <br> C: Crazyberry</html>");
+		
+		question2 = new JLabel("<html>Which is not a real veggie? <br> A: Melothria Scabra <br> B: Snapaola <br> C: Perilla</html>");
+		
+		question3 = new JLabel("<html>Which is not a real brand? <br> A: Adidas <br> B: Snek <br> C: Koeniesegg</html>");
+		
+		question4 = new JLabel("<html>Which is not a real element? <br> A: Praseodymium <br> B: Protactinaum <br> C: Praledactalium</html>");
+		
+		question5 = new JLabel("<html>Which is not a real number? <br> A: ar <br> B: pi <br> C: n</html>");
+	
+		
+		
 		// 11. Make another question called "question2".  Use question1 above as a guide.
 	}
 
@@ -21,9 +32,13 @@ public class FruitQuiz extends KeyAdapter {
 	public void keyPressed(KeyEvent arg0) {
 		int keyCode = arg0.getKeyCode();
 		// 1. Print out the key code variable
-
+System.out.println(keyCode);
 		// 2. Make 3 int variables that hold the key codes for A, b, and C
+		int answer1 = 65;
 		
+		int answer2 = 66;
+		
+		int answer3 = 67;
 		// 14. Repeat steps 11, 12, and 13 for question3 and question4 - IMPORTANT: The questions must be in reverse order from top to bottom to work properly
 		
 		// 12. If question2 is showing,
@@ -33,16 +48,17 @@ public class FruitQuiz extends KeyAdapter {
 			
 		if (question1.isShowing()) {
 			// 3. If they selected the right fruit, do steps 4 and 7
-			
+			 if(keyCode == answer3) {
 				// 4. Call the correct() method
-				
+				correct();
 				// 7. Use the nextQuestion() method to go to question2
-			
+			nextQuestion(question2);
+			 }
 			
 			// 8. else (if they touched something else)
-				
+			 else {incorrect();
 				// 9. Call the incorrect() method
-		
+			 }
 		}
 
 	}
@@ -52,13 +68,13 @@ public class FruitQuiz extends KeyAdapter {
 		// the default package. It must be a .wav file. 
 		// There are lots on freesound.org
 		// 6. Use the playSound method to play your sound
-
+playSound("335908_littlerainyseasons_correct.wav");
 
 	}
 
 	private void incorrect() {
 		// 10. Find a sound for wrong answers and put it in the default package. Use the playSound method to play it.
-
+playSound("278164_thedweebman_8-bit-wrong-2.wav");
 	}
 
 	private void nextQuestion(JLabel newQuestion) {
