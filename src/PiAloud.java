@@ -10,7 +10,7 @@ public class PiAloud {
  
 	
 public static void main(String[] args) {
-	iaGFBsajL
+	
   int num = 0;
 	
 	// 1. Make a main method and make sure your program can run

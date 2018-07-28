@@ -49,7 +49,7 @@ if (task == 7) {Give_Frog();
 }
  
 	
-	
+
 	
 	
 if(happinessLevel == 5) {
