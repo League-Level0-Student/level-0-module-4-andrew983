@@ -1,7 +1,6 @@
 //    Copyright (c) The League of Amazing Programmers 2013-2017
 //    Level 0
 
-
 import java.applet.AudioClip;
 
 import javax.swing.JApplet;
@@ -9,7 +8,8 @@ import javax.swing.JOptionPane;
 
 public class DontForgetTheLyrics {
 	/*
-	 * For this game, we'll play the start of a song, and the player has to guess the rest of the lyrics.
+	 * For this game, we'll play the start of a song, and the player has to guess
+	 * the rest of the lyrics.
 	 * 
 	 * 1. To record a sound clip, open Audacity and record your song.
 	 * 
@@ -17,10 +17,11 @@ public class DontForgetTheLyrics {
 	 * 
 	 * 3. Drag your file from the Desktop into the "default package" under "src".
 	 */
-	
+
 	public static void main(String[] args) {
 		// 4. Make a pop-up to explain the game.
-JOptionPane.showMessageDialog(null, "For this game, we'll play the start of a song, and you have to guess the rest of the lyrics.");
+		JOptionPane.showMessageDialog(null,
+				"For this game, we'll play the start of a song, and you have to guess the rest of the lyrics.");
 		// 5. Use the playSound method to play your song.
 
 		// 6. Make a pop-up for the player to type their answer.
@@ -39,6 +40,3 @@ JOptionPane.showMessageDialog(null, "For this game, we'll play the start of a so
 		audioClip.play();
 	}
 }
-
-
-q3rwdascwds
